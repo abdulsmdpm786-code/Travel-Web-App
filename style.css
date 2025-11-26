@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF3E1;
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #222222;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 3rem;
+}
+
+.topnav a:hover {
+    color: #FF6D1F;
+
+}
+
+.topnav a.active {
+    color: #FF6D1F;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/mountain.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+    max-width: 100%;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    
+}
+
+.hero-content h1 {
+   font-size: clamp(3rem, 15vw, 12rem);
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 7rem;
+
+    margin: 0;
+    font-family: "kristi", cursive;
+    font-size: clamp(2rem, 8vw, 7rem);
+    color: #FF6D1F;
+}
+
+.hero-content button {
+    background-color: #FF6D1F;
+    color: white;
+   padding: 1rem 2rem;
+    margin: 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+}
+
+
+
+/* media query code */
+
+/* for mobiles */
+@media   (max-width: 768px)  {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        background-size: contain;
+        background-position: top center;
+
+    } */
+     .hero-section {
+        background-size: cover;
+        
+        background-position: 60% center; 
+        
+        height: 100vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topnav i{
+        margin-right: 20px;
+    }
+
+    .hero-content{
+        align-items: center;
+    }
+
+
+}
+
+/* for tablets */
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+     .hero-section {
+        background-size: cover;
+        
+        background-position: 60% center; 
+        
+        height: 100vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topnav i{
+        margin-right: 40px;
+    }
+    .hero-content{
+        justify-content: flex-start;
+    }
+
+
+}
