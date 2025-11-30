@@ -51,6 +51,10 @@ body {
 .btn {cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #222222;
+}
+
 .hero-content {
     text-align: center;
     color: white;
