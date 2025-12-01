@@ -35,7 +35,7 @@ html {
 .text h1 {
     color: #FF6D1F;
     font-family: "kristi", cursive;
-    font-size: clamp(4rem, 8vw, 7rem);
+    font-size: clamp(3rem, 8vw, 7rem);
     margin: 0;
 }
 
@@ -63,7 +63,7 @@ html {
 .heading {
     color: #FF6D1F;
     font-family: "kristi", cursive;
-    font-size: clamp(4rem, 8vw, 7rem);
+    font-size: clamp(3rem, 8vw, 7rem);
     text-align: center;
 }
 
@@ -246,6 +246,82 @@ html {
     padding-top: 15px;
 }
 
+.btn-section {
+    width: 100%;
+    margin-bottom: 12rem;
+}
+
+.btn-section a {
+text-decoration: none;
+}
+
+.btn-top {
+    margin-left: 45%;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4)
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: #FF6D1F;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.images {
+    padding: 20px;
+}
+
+
 
 /* media query */
 
@@ -263,6 +339,16 @@ html {
         width: 100%;
     }
 
+       .btn-top {
+    margin-left: 35%;
+
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4)
+}
+
+.images img {
+    width: 100%;
+}
+
 
 }
 
@@ -279,5 +365,11 @@ html {
 
         width: 45%;
     }
+
+    .btn-top {
+    margin-left: 40%;
+
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4)
+}
 
 }
